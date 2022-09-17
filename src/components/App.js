@@ -6,7 +6,7 @@ function App() {
     <>
       <nav className="navBar">
         <ul className="navBar">
-          <li>
+          <li className="homePage">
             <Link to="/">Home Page</Link>
           </li>
           <li>

@@ -17,20 +17,24 @@ function RandomAnimal() {
     return (
         <>
             <div className="containerCard">
-                <img className="imgCard" src={animal.image_link} alt={animal.name}/>
+                <div className="right">
+                    <h1>{animal.name}</h1>
+                    <img className="imgCard" src={animal.image_link} alt={animal.name}/>
+                </div>
+                <div className="left">
+                    {/* <p>Latin name: {animal.latin_name}</p>
+                    <p>Natural Habitat: {animal.habitat}</p>
+                    <p>Diet: {animal.diet}</p>
+                    <p>Where can you find it? {animal.geo_range}</p> */}
+                    <ul>
+                        <li className="info"><b>Latin name:</b>{animal.latin_name}</li>
+                        <li className="info"><b>Natural Habitat:</b>{animal.habitat}</li>
+                        <li className="info"><b>Diet:</b>{animal.diet}</li>
+                        <li className="info"><b>Where can you find it?</b>{animal.geo_range}</li>
+                    </ul>
+                    <button type="button" className="btn" onClick={getCard}>Get another animal</button>
+                </div>
             </div>
-            <div>
-                <h1>{animal.name}</h1>
-            </div>
-            <div>
-                <ul>
-                    <li>Latin name: {animal.latin_name}</li>
-                    <li>Natural Habitat: {animal.habitat}</li>
-                    <li>Diet: {animal.diet}</li>
-                    <li>Where can you find it? {animal.geo_range}</li>
-                </ul>
-            </div>
-            <button type="button" className="btn" onClick={getCard}>Get another animal</button>
         </>
     );
 };

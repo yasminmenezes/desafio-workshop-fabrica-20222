@@ -2,7 +2,7 @@ import Cards from "../components/cards";
 
 const CardsPage = () => {
     return (
-        <main>
+        <main className="holeCard">
             <Cards />
         </main>
     );
