@@ -6,12 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import CardsPage from './routes/cards.page';
 import GalleryPage from './routes/gallery.page';
+import LandingPage from './routes/landing.page';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <LandingPage />,
+      },
       {
         path: "/randomanimal",
         element: <CardsPage />,
@@ -26,9 +31,7 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function

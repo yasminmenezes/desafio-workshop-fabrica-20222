@@ -3,7 +3,7 @@ import Cards from "../components/cards";
 const CardsPage = () => {
     return (
         <main className="holeCard">
-            <Cards />
+            <Cards displayButton={true}/>
         </main>
     );
 };

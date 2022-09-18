@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
-import RandomAnimal from "./cards";
 
 function App() {
+  
   return(
     <>
       <nav className="navBar">
@@ -10,10 +10,10 @@ function App() {
             <Link to="/">Home Page</Link>
           </li>
           <li>
-            <Link to="/randomanimal">Animals Cards</Link>
+            <Link to="/randomanimal">Random Animal</Link>
           </li>
           <li>
-            <Link to="/gallery">Zoo Gallery</Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,8 @@
 
 const { useState, useEffect } = require("react");
 
-function RandomAnimal() {
+function RandomAnimal(shouldShowButton) {
+    // console.log(shouldShowButton); shouldShowButton.displayButton para acessar o valor boolean
     const [animal, setAnimal] = useState("animal cards here");
 
     useEffect(() => {getCard();}, []);
@@ -22,17 +23,13 @@ function RandomAnimal() {
                     <img className="imgCard" src={animal.image_link} alt={animal.name}/>
                 </div>
                 <div className="left">
-                    {/* <p>Latin name: {animal.latin_name}</p>
-                    <p>Natural Habitat: {animal.habitat}</p>
-                    <p>Diet: {animal.diet}</p>
-                    <p>Where can you find it? {animal.geo_range}</p> */}
                     <ul>
-                        <li className="info"><b>Latin name:</b>{animal.latin_name}</li>
-                        <li className="info"><b>Natural Habitat:</b>{animal.habitat}</li>
-                        <li className="info"><b>Diet:</b>{animal.diet}</li>
-                        <li className="info"><b>Where can you find it?</b>{animal.geo_range}</li>
+                        <li className="info"><b>Latin name: </b>{animal.latin_name}</li>
+                        <li className="info"><b>Natural Habitat: </b>{animal.habitat}</li>
+                        <li className="info"><b>Diet: </b>{animal.diet}</li>
+                        <li className="info"><b>Where can you find it? </b>{animal.geo_range}</li>
                     </ul>
-                    <button type="button" className="btn" onClick={getCard}>Get another animal</button>
+                    {shouldShowButton.displayButton && (<button type="button" className="btn" onClick={getCard}>Get another animal</button>)}
                 </div>
             </div>
         </>

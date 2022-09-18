@@ -1,15 +1,16 @@
 import RandomAnimal from "./cards"
 
-
 const Gallery = () => {
 
     return (
         <>
-            <RandomAnimal />
-            <RandomAnimal />
-            <RandomAnimal />
-            <RandomAnimal />
-            <RandomAnimal />
+            <div className="gallery">
+                <article><RandomAnimal displayButton={false} /></article>
+                <article><RandomAnimal displayButton={false} /></article>
+                <article><RandomAnimal displayButton={false} /></article>
+                <article><RandomAnimal displayButton={false} /></article>
+                <article><RandomAnimal displayButton={false} /></article>
+            </div>
         </>
     );
 
