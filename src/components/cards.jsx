@@ -1,4 +1,3 @@
-
 const { useState, useEffect } = require("react");
 
 function RandomAnimal(shouldShowButton) {
@@ -18,16 +17,28 @@ function RandomAnimal(shouldShowButton) {
     return (
         <>
             <div className="containerCard">
-                <div className="right">
+                <div className="left">
                     <h1>{animal.name}</h1>
                     <img className="imgCard" src={animal.image_link} alt={animal.name}/>
                 </div>
-                <div className="left">
+                <div className="right">
                     <ul>
-                        <li className="info"><b>Latin name: </b>{animal.latin_name}</li>
-                        <li className="info"><b>Natural Habitat: </b>{animal.habitat}</li>
-                        <li className="info"><b>Diet: </b>{animal.diet}</li>
-                        <li className="info"><b>Where can you find it? </b>{animal.geo_range}</li>
+                        <div className="info">
+                            <li><b>Latin name:</b></li>
+                            {animal.latin_name}
+                        </div>
+                        <div className="info">
+                            <li><b>Natural Habitat:</b></li>
+                            {animal.habitat}
+                        </div>
+                        <div className="info">
+                            <li><b>Diet:</b></li>
+                            {animal.diet}
+                        </div>
+                        <div className="info">
+                            <li><b>It's from:</b></li>
+                            {animal.geo_range}
+                        </div>
                     </ul>
                     {shouldShowButton.displayButton && (<button type="button" className="btn" onClick={getCard}>Get another animal</button>)}
                 </div>

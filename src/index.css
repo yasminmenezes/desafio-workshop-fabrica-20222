@@ -9,26 +9,10 @@
 body {
   background-image: radial-gradient(rgba(13, 95, 28, 0.5),
   rgba(0, 255, 0, 0.5)), url("https://illustoon.com/photo/830.png");
-  
   /* background-color: green; */
-  
 }
 
-.center {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 2%;
-  display: flex;
-}
-
-.main{
-  padding: 40px 0;
-}
-
-/* .homePage {
-  background-color: green;
-} */
-
+/*NAVBAR*/
 a {
   text-decoration: none;
   color: #265301;
@@ -48,6 +32,35 @@ li {
   justify-content: flex-start;
   list-style-type: none;
 }
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  font-size: 1.5rem;
+  
+}
+/*LANDING PAGE */
+.main {
+  margin: 20px;
+  padding: 40px 0;
+  /* width: 90%; */
+  background-color: rgba(255, 255, 255, 0.29);
+  min-height: 400px;
+}
+
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #43890a65;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -70,26 +83,35 @@ li {
   padding: 1rem;
 }
 
+/*GALLERY PAGE*/
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+article {
+  margin: 10px;
+}
+
+/*RANDOM ANIMAL (CARDS PAGE)*/
 .containerCard{
-  /* display: flex; */
   align-items: center;
   /* justify-content: center; */
-  background-color: #fff;
+  background-color: antiquewhite;
   border-radius: 30px;
   width: 60vw;
-  /* max-width: 90vw; */
-  /* height: 80vh; */
+  max-width: 90vw;
   padding: 20px 10px;
   text-align: center;
   /* box-shadow: 0px 7px 27px 4px rgba(173,255,175,0.77); */
   /* border: 1px solid black; */
 }
 
-.gallery{
+.info{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -118,26 +140,13 @@ li {
   margin: 0px 10px;
 }
 
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 0;
-  width: 100%;
-  background-color: antiquewhite;
-  font-size: 1.5rem;
-  
-}
 
-article {
-  margin: 10px;
-}
 
-button {
+
+.btn {
   margin-top: 1rem;
   padding: 0.7rem 1rem;
-  border: 2px solid #cdfeaa;
+  border: 2px solid rgba(4, 164, 7, 0.9);
   color:rgba(4, 164, 7, 0.9);
   background-color: #cdfeaa;
   border-radius: 20px;
@@ -146,26 +155,10 @@ button {
   font-size: 1rem;
 }
 
-button:hover{
+.btn:hover{
   background-color: rgba(4, 164, 7, 0.9);
   color:#cdfeaa;
   transition: background-color 0.3s linear, box-shadow 0.3s ease;
 }
 
-/* ESTILIZANDO A LANDING PAGE */
-.main {
-  margin: 20px;
-  padding: 40px 0;
-  /* width: 90%; */
-  background-color: rgba(255, 255, 255, 0.29);
-  min-height: 400px;
-}
-
-.menu{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #43890a65;
-}
 

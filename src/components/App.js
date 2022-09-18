@@ -6,14 +6,14 @@ function App() {
     <>
       <nav className="navBar">
         <ul className="navBar">
-          <li className="homePage">
+          <li>
             <Link to="/">Home Page</Link>
           </li>
           <li>
-            <Link to="/randomanimal">Random Animal</Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li>
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/randomanimal">Random Animal</Link>
           </li>
         </ul>
       </nav>

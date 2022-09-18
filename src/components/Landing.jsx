@@ -1,7 +1,5 @@
-
 function Landing () {
     return (
-        
       <div className="app">
         <div className="main">
           <div className="menu">
@@ -11,7 +9,7 @@ function Landing () {
               <p>
                 Welcome to Kangazoo!<br/><br/> We are an Australian zoo with the
                 wildest and best experience you can have.Our zoo gives you 
-                the chance to see <a href="http://localhost:3000/gallery"> animals </a> 
+                the chance to see <a href="http://localhost:3000/gallery" className="galleryLink"> animals </a> 
                 safely and much closer than in the wild, with most Australian zoos
                 offering wildlife encounters and in-depth tours to make your visit 
                 extra special. Plus, with strong animal welfare laws in Australia, 

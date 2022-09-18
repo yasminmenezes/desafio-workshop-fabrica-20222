@@ -1,11 +1,11 @@
-// ps.: This is not being used yet.
+// BUTTON FUNCTION: NOT WORKING YET
 
-const Button = () => {
-    return (
-        <button type="button" className="btn" onClick={getCard}>
-            Get another animal
-        </button>
-    );
-};
+// const Button = () => {
+//     return (
+//         <button type="button" className="btn" onClick={getCard}>
+//             Get another animal
+//         </button>
+//     );
+// };
 
-export default Button;
+// export default Button;

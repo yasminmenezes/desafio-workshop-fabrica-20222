@@ -18,13 +18,13 @@ const router = createBrowserRouter([
         element: <LandingPage />,
       },
       {
-        path: "/randomanimal",
-        element: <CardsPage />,
-      },
-      {
         path: "/gallery",
         element: <GalleryPage />,
       },
+      {
+        path: "/randomanimal",
+        element: <CardsPage />,
+      }
     ],
   },
 ]);
